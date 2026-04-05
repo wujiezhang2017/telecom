@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-   <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
     <title>广州电信宽带报装 - 区域总监 张武杰 | 政企专线 家庭宽带</title>
     <meta name="description" content="广州电信区域总监张武杰，官方认证，提供家庭宽带、企业专线、政企组网等业务。极速响应，正规渠道，售后直达。电话：18922168560">
     <meta name="keywords" content="广州电信宽带,广州宽带报装,电信政企业务,区域总监,张武杰,企业专线办理,广州电信客户经理,天翼智屏">
@@ -53,14 +53,6 @@
             border-radius: 40px;
             font-weight: bold;
             font-size: 0.85rem;
-        }
-        @media (max-width: 650px) {
-            .header h1 {
-                font-size: 1.4rem;
-            }
-            .header .tagline {
-                font-size: 0.9rem;
-            }
         }
         .profile {
             display: flex;
@@ -268,19 +260,6 @@
             color: #5b6e8c;
             background: white;
         }
-        @media (max-width: 650px) {
-            .profile {
-                flex-direction: column;
-                text-align: center;
-            }
-            .info-detail p {
-                justify-content: center;
-            }
-            .modal-content {
-                margin: 25% auto;
-                width: 85%;
-            }
-        }
         .product-img-placeholder {
             background: #eef3fc;
             border-radius: 20px;
@@ -291,6 +270,151 @@
         .product-img-placeholder img {
             max-width: 100%;
             border-radius: 16px;
+        }
+
+        /* ========== 手机端专项优化 (屏幕宽度 ≤ 768px) ========== */
+        @media (max-width: 768px) {
+            body {
+                padding: 12px;
+            }
+            .container {
+                border-radius: 20px;
+            }
+            .header {
+                padding: 20px 16px 16px;
+            }
+            .header h1 {
+                font-size: 1.3rem;
+                margin-bottom: 6px;
+            }
+            .header .tagline {
+                font-size: 0.85rem;
+                margin-bottom: 8px;
+            }
+            .contact-bar {
+                font-size: 0.75rem;
+                padding: 4px 14px;
+            }
+            .profile {
+                padding: 24px 20px;
+                gap: 20px;
+            }
+            .profile-img {
+                flex: 0 0 120px;
+            }
+            .profile-img img {
+                max-width: 110px;
+                border-width: 3px;
+            }
+            .profile-info h2 {
+                font-size: 1.4rem;
+                margin-bottom: 8px;
+            }
+            .info-detail {
+                padding: 10px 14px;
+                margin: 10px 0;
+            }
+            .info-detail p {
+                margin: 6px 0;
+                gap: 8px;
+                font-size: 0.85rem;
+            }
+            .badge {
+                font-size: 0.75rem;
+                padding: 3px 10px;
+            }
+            .section {
+                padding: 20px 20px 16px;
+            }
+            .section h3 {
+                font-size: 1.3rem;
+                margin-bottom: 16px;
+                padding-left: 12px;
+                border-left-width: 4px;
+            }
+            .product-grid {
+                gap: 16px;
+                margin-top: 10px;
+            }
+            .card {
+                padding: 16px;
+            }
+            .card h4 {
+                font-size: 1.15rem;
+                margin-bottom: 8px;
+            }
+            .card .price {
+                font-size: 1.25rem;
+                margin: 8px 0;
+            }
+            .card ul {
+                margin-left: 12px;
+                margin-top: 8px;
+            }
+            .card li {
+                margin: 5px 0;
+                font-size: 0.85rem;
+            }
+            .click-hint {
+                font-size: 0.7rem;
+                margin-top: 10px;
+                padding: 3px 10px;
+            }
+            .contact-section {
+                padding: 24px 16px;
+            }
+            .contact-section h3 {
+                font-size: 1.2rem;
+                margin-bottom: 10px;
+            }
+            .contact-section p {
+                font-size: 0.85rem;
+            }
+            .btn {
+                font-size: 1rem;
+                padding: 10px 24px;
+                margin: 8px 8px;
+            }
+            .footer {
+                padding: 16px;
+                font-size: 0.7rem;
+            }
+            .modal-content {
+                margin: 20% auto;
+                padding: 20px;
+                width: 92%;
+            }
+            .modal h3 {
+                font-size: 1.25rem;
+            }
+            .modal p, .modal ul {
+                font-size: 0.9rem;
+                line-height: 1.4;
+            }
+            .modal-btn {
+                font-size: 0.9rem;
+                padding: 8px 16px;
+            }
+            .product-img-placeholder {
+                padding: 6px;
+            }
+        }
+
+        /* 更小屏幕（≤480px）进一步微调 */
+        @media (max-width: 480px) {
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+            .info-detail p {
+                justify-content: center;
+            }
+            .profile-img {
+                margin-bottom: 8px;
+            }
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -366,25 +490,22 @@
         </div>
     </div>
 
-    <!-- 新增：更多产品/方案介绍 模块 -->
+    <!-- 更多产品/方案介绍 -->
     <div class="section">
         <h3>📦 更多产品/方案介绍（点击卡片查看详情）</h3>
         <div class="product-grid">
-            <!-- 天翼智屏卡片 -->
             <div class="card" data-product="tianyi_zhiping">
                 <h4>天翼智屏</h4>
                 <div class="price">五大核心功能</div>
                 <ul><li>看电视 · 打电话 · 能看家 · 开大门 · 控家电</li></ul>
                 <div class="click-hint">👉 点击查看图片及材料介绍</div>
             </div>
-            <!-- 占位卡片1 -->
             <div class="card" data-product="placeholder_community">
                 <h4>智慧社区方案</h4>
                 <div class="price">即将推出</div>
                 <ul><li>人脸门禁 · 车辆识别 · 智慧停车</li></ul>
                 <div class="click-hint">👉 点击了解详情</div>
             </div>
-            <!-- 占位卡片2 -->
             <div class="card" data-product="placeholder_cloud">
                 <h4>企业云盘服务</h4>
                 <div class="price">敬请期待</div>
@@ -432,7 +553,7 @@
     const productDetails = {
         home_300m: {
             title: "极速光纤 · 300M 家庭宽带",
-            content: `<p><strong>套餐详情：</strong></p><ul><li>下行300M，上行30M，满足4K视频、在线教育、远程办公</li><li>赠送IPTV基础版（含央视及卫视直播）</li><li>全市免费上门办理</li><li>家庭成员互打免费、共享语音流量</li></ul><p><strong>适合人群：</strong> 中小户型家庭，日常上网、视频、游戏流畅体验。</p><p><strong>优惠活动：</strong>  联系总监享50元话费补贴。</p><a href="tel:18922168560" class="modal-btn">📞 立即联系办理</a>`
+            content: `<p><strong>套餐详情：</strong></p><ul><li>下行300M，上行30M，满足4K视频、在线教育、远程办公</li><li>赠送IPTV基础版（含央视及卫视直播）</li><li>全市免费上门办理</li><li>家庭成员互打免费、共享语音流量</li></ul><p><strong>适合人群：</strong> 中小户型家庭，日常上网、视频、游戏流畅体验。</p><p><strong>优惠活动：</strong> 联系总监享50元话费补贴。</p><a href="tel:18922168560" class="modal-btn">📞 立即联系办理</a>`
         },
         home_1000m: {
             title: "畅享千兆 · 1000M 全屋WiFi",
@@ -459,7 +580,6 @@
             content: `
                 <p><strong>产品图片：</strong></p>
                 <div class="product-img-placeholder">
-                    <!-- 请将产品图片命名为 tianyi_zhiping.jpg 并放在同一目录下 -->
                     <img src="tianyi_zhiping.jpg" alt="天翼智屏产品图" onerror="this.src='https://via.placeholder.com/400x200?text=天翼智屏+产品图'">
                     <p style="font-size:0.8rem; color:#666;">△ 产品示意图（可替换为真实图片）</p>
                 </div>
@@ -471,9 +591,6 @@
                     <li>🚪 <strong>开大门</strong>：智能门锁联动，远程临时密码，开门记录</li>
                     <li>🔌 <strong>控家电</strong>：红外/蓝牙网关，控制空调、电视、灯光等</li>
                 </ul>
-                <!--<p><strong>产品介绍材料：</strong><br>-->
-                 <!--📄 <a href="tianyi_zhiping.pptx" download>点击下载产品介绍PPT</a>（请将PPT文件放在网页同目录下）<br>-->
-                 <!--📄 <a href="tianyi_zhiping.pdf" download>点击下载产品彩页PDF</a></p>-->
                 <p><strong>优惠活动：</strong> 新装宽带用户可享设备0元租用，详询张总监。</p>
                 <a href="tel:18922168560" class="modal-btn">📞 立即咨询天翼智屏</a>
             `
