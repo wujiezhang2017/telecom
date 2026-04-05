@@ -4,417 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
-    <title>广州电信宽带报装 - 区域总监 张武杰 | 政企专线 家庭宽带</title>
-    <meta name="description" content="广州电信区域总监张武杰，官方认证，提供家庭宽带、企业专线、政企组网等业务。极速响应，正规渠道，售后直达。电话：18922168560">
+    <title>广州电信宽带报装 - 张武杰 区域总监 | 政企专线 家庭宽带</title>
+    <meta name="description" content="广州电信区域总监张武杰，官方认证，提供家庭宽带、企业专线、政企组网等业务。极速响应，正规渠道，售后直达。电话：189 2216 8560">
     <meta name="keywords" content="广州电信宽带,广州宽带报装,电信政企业务,区域总监,张武杰,企业专线办理,广州电信客户经理,天翼智屏">
     <meta name="author" content="张武杰">
     <meta name="robots" content="index, follow">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:'Segoe UI',Roboto,sans-serif;background:#f0f4f8;color:#1e2a3e;line-height:1.5;padding:20px;}
+        .container{max-width:1100px;margin:0 auto;background:white;border-radius:28px;box-shadow:0 20px 35px -10px rgba(0,0,0,0.1);overflow:hidden;}
+        .header{background:linear-gradient(135deg,#002c5f,#004a99);color:white;padding:30px 20px 20px;text-align:center;}
+        .header h1{font-size:1.8rem;margin-bottom:8px;letter-spacing:-0.5px;}
+        .header .tagline{font-size:1rem;opacity:0.9;margin-bottom:12px;}
+        .contact-bar{background:rgba(255,255,255,0.15);display:inline-block;padding:6px 18px;border-radius:40px;font-weight:bold;font-size:0.85rem;}
+        .profile{display:flex;flex-wrap:wrap;padding:40px 30px;gap:30px;border-bottom:1px solid #e2e8f0;}
+        .profile-img{flex:0 0 180px;text-align:center;}
+        .profile-img img{width:100%;max-width:160px;border-radius:50%;border:4px solid #004a99;box-shadow:0 8px 20px rgba(0,0,0,0.1);}
+        .profile-info{flex:1;}
+        .profile-info h2{color:#002c5f;margin-bottom:12px;font-size:1.8rem;}
+        .info-detail{margin:15px 0;background:#f8fafc;padding:12px 18px;border-radius:20px;}
+        .info-detail p{margin:8px 0;display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+        .badge{background:#e6f2ff;color:#004a99;padding:4px 12px;border-radius:30px;font-size:0.85rem;font-weight:bold;}
+        .section{padding:30px 30px 20px;border-bottom:1px solid #e2e8f0;}
+        .section h3{font-size:1.6rem;margin-bottom:20px;color:#002c5f;border-left:6px solid #ffaa00;padding-left:16px;}
+        .product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;margin-top:15px;}
+        .card{background:#f9f9ff;border-radius:24px;padding:20px;transition:0.2s;border:1px solid #e0e7f0;cursor:pointer;}
+        .card:hover{transform:translateY(-4px);box-shadow:0 12px 24px rgba(0,0,0,0.1);border-color:#004a99;}
+        .card h4{color:#004a99;font-size:1.3rem;margin-bottom:12px;}
+        .card .price{font-size:1.5rem;font-weight:bold;color:#c2410c;margin:10px 0;}
+        .card ul{margin-left:18px;margin-top:12px;color:#2c3e50;}
+        .card li{margin:8px 0;}
+        .click-hint{display:inline-block;margin-top:12px;font-size:0.8rem;color:#004a99;background:#eef3fc;padding:4px 12px;border-radius:20px;}
+        .modal{display:none;position:fixed;z-index:1000;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgba(0,0,0,0.5);backdrop-filter:blur(3px);}
+        .modal-content{background-color:#fff;margin:8% auto;padding:25px;border-radius:32px;width:90%;max-width:550px;box-shadow:0 20px 35px rgba(0,0,0,0.3);position:relative;animation:fadeInUp 0.3s ease;max-height:80vh;overflow-y:auto;}
+        @keyframes fadeInUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
+        .close-modal{position:absolute;right:20px;top:15px;font-size:28px;font-weight:bold;color:#aaa;cursor:pointer;transition:0.2s;}
+        .close-modal:hover{color:#002c5f;}
+        .modal h3{color:#002c5f;margin-bottom:15px;font-size:1.5rem;padding-right:25px;}
+        .modal p,.modal ul{margin-bottom:12px;line-height:1.5;}
+        .modal ul{padding-left:20px;}
+        .modal-btn{display:inline-block;background:#004a99;color:white;padding:10px 20px;border-radius:40px;text-decoration:none;margin-top:15px;font-weight:bold;}
+        .contact-section{background:#eef3fc;text-align:center;padding:35px 20px;}
+        .btn{display:inline-block;background:#002c5f;color:white;font-size:1.2rem;font-weight:bold;padding:14px 32px;border-radius:48px;text-decoration:none;margin:12px 10px;transition:0.2s;border:none;cursor:pointer;}
+        .btn:hover{background:#ffaa00;color:#002c5f;}
+        .footer{text-align:center;padding:20px;font-size:0.8rem;color:#5b6e8c;background:white;}
+        .product-img-placeholder{background:#eef3fc;border-radius:20px;padding:10px;text-align:center;margin:15px 0;}
+        .product-img-placeholder img{max-width:100%;border-radius:16px;}
+        @media (max-width: 768px){
+            body{padding:12px;}
+            .container{border-radius:20px;}
+            .header{padding:20px 16px 16px;}
+            .header h1{font-size:1.3rem;margin-bottom:6px;}
+            .header .tagline{font-size:0.85rem;margin-bottom:8px;}
+            .contact-bar{font-size:0.75rem;padding:4px 14px;}
+            .profile{padding:24px 20px;gap:20px;}
+            .profile-img{flex:0 0 120px;}
+            .profile-img img{max-width:110px;border-width:3px;}
+            .profile-info h2{font-size:1.4rem;margin-bottom:8px;}
+            .info-detail{padding:10px 14px;margin:10px 0;}
+            .info-detail p{margin:6px 0;gap:8px;font-size:0.85rem;}
+            .badge{font-size:0.75rem;padding:3px 10px;}
+            .section{padding:20px 20px 16px;}
+            .section h3{font-size:1.3rem;margin-bottom:16px;padding-left:12px;border-left-width:4px;}
+            .product-grid{gap:16px;margin-top:10px;}
+            .card{padding:16px;}
+            .card h4{font-size:1.15rem;margin-bottom:8px;}
+            .card .price{font-size:1.25rem;margin:8px 0;}
+            .card ul{margin-left:12px;margin-top:8px;}
+            .card li{margin:5px 0;font-size:0.85rem;}
+            .click-hint{font-size:0.7rem;margin-top:10px;padding:3px 10px;}
+            .contact-section{padding:24px 16px;}
+            .contact-section h3{font-size:1.2rem;margin-bottom:10px;}
+            .contact-section p{font-size:0.85rem;}
+            .btn{font-size:1rem;padding:10px 24px;margin:8px 8px;}
+            .footer{padding:16px;font-size:0.7rem;}
+            .modal-content{margin:20% auto;padding:20px;width:92%;}
+            .modal h3{font-size:1.25rem;}
+            .modal p,.modal ul{font-size:0.9rem;line-height:1.4;}
+            .modal-btn{font-size:0.9rem;padding:8px 16px;}
+            .product-img-placeholder{padding:6px;}
         }
-        body {
-            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-            background: #f0f4f8;
-            color: #1e2a3e;
-            line-height: 1.5;
-            padding: 20px;
-        }
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 28px;
-            box-shadow: 0 20px 35px -10px rgba(0,0,0,0.1);
-            overflow: hidden;
-        }
-        .header {
-            background: linear-gradient(135deg, #002c5f, #004a99);
-            color: white;
-            padding: 30px 20px 20px;
-            text-align: center;
-        }
-        .header h1 {
-            font-size: 1.8rem;
-            margin-bottom: 8px;
-            letter-spacing: -0.5px;
-        }
-        .header .tagline {
-            font-size: 1rem;
-            opacity: 0.9;
-            margin-bottom: 12px;
-        }
-        .contact-bar {
-            background: rgba(255,255,255,0.15);
-            display: inline-block;
-            padding: 6px 18px;
-            border-radius: 40px;
-            font-weight: bold;
-            font-size: 0.85rem;
-        }
-        .profile {
-            display: flex;
-            flex-wrap: wrap;
-            padding: 40px 30px;
-            gap: 30px;
-            border-bottom: 1px solid #e2e8f0;
-        }
-        .profile-img {
-            flex: 0 0 180px;
-            text-align: center;
-        }
-        .profile-img img {
-            width: 100%;
-            max-width: 160px;
-            border-radius: 50%;
-            border: 4px solid #004a99;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-        }
-        .profile-info {
-            flex: 1;
-        }
-        .profile-info h2 {
-            color: #002c5f;
-            margin-bottom: 12px;
-            font-size: 1.8rem;
-        }
-        .info-detail {
-            margin: 15px 0;
-            background: #f8fafc;
-            padding: 12px 18px;
-            border-radius: 20px;
-        }
-        .info-detail p {
-            margin: 8px 0;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            flex-wrap: wrap;
-        }
-        .badge {
-            background: #e6f2ff;
-            color: #004a99;
-            padding: 4px 12px;
-            border-radius: 30px;
-            font-size: 0.85rem;
-            font-weight: bold;
-        }
-        .section {
-            padding: 30px 30px 20px;
-            border-bottom: 1px solid #e2e8f0;
-        }
-        .section h3 {
-            font-size: 1.6rem;
-            margin-bottom: 20px;
-            color: #002c5f;
-            border-left: 6px solid #ffaa00;
-            padding-left: 16px;
-        }
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 25px;
-            margin-top: 15px;
-        }
-        .card {
-            background: #f9f9ff;
-            border-radius: 24px;
-            padding: 20px;
-            transition: 0.2s;
-            border: 1px solid #e0e7f0;
-            cursor: pointer;
-        }
-        .card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 24px rgba(0,0,0,0.1);
-            border-color: #004a99;
-        }
-        .card h4 {
-            color: #004a99;
-            font-size: 1.3rem;
-            margin-bottom: 12px;
-        }
-        .card .price {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #c2410c;
-            margin: 10px 0;
-        }
-        .card ul {
-            margin-left: 18px;
-            margin-top: 12px;
-            color: #2c3e50;
-        }
-        .card li {
-            margin: 8px 0;
-        }
-        .click-hint {
-            display: inline-block;
-            margin-top: 12px;
-            font-size: 0.8rem;
-            color: #004a99;
-            background: #eef3fc;
-            padding: 4px 12px;
-            border-radius: 20px;
-        }
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0,0,0,0.5);
-            backdrop-filter: blur(3px);
-        }
-        .modal-content {
-            background-color: #fff;
-            margin: 8% auto;
-            padding: 25px;
-            border-radius: 32px;
-            width: 90%;
-            max-width: 550px;
-            box-shadow: 0 20px 35px rgba(0,0,0,0.3);
-            position: relative;
-            animation: fadeInUp 0.3s ease;
-            max-height: 80vh;
-            overflow-y: auto;
-        }
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        .close-modal {
-            position: absolute;
-            right: 20px;
-            top: 15px;
-            font-size: 28px;
-            font-weight: bold;
-            color: #aaa;
-            cursor: pointer;
-            transition: 0.2s;
-        }
-        .close-modal:hover {
-            color: #002c5f;
-        }
-        .modal h3 {
-            color: #002c5f;
-            margin-bottom: 15px;
-            font-size: 1.5rem;
-            padding-right: 25px;
-        }
-        .modal p, .modal ul {
-            margin-bottom: 12px;
-            line-height: 1.5;
-        }
-        .modal ul {
-            padding-left: 20px;
-        }
-        .modal-btn {
-            display: inline-block;
-            background: #004a99;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 40px;
-            text-decoration: none;
-            margin-top: 15px;
-            font-weight: bold;
-        }
-        .contact-section {
-            background: #eef3fc;
-            text-align: center;
-            padding: 35px 20px;
-        }
-        .btn {
-            display: inline-block;
-            background: #002c5f;
-            color: white;
-            font-size: 1.2rem;
-            font-weight: bold;
-            padding: 14px 32px;
-            border-radius: 48px;
-            text-decoration: none;
-            margin: 12px 10px;
-            transition: 0.2s;
-            border: none;
-            cursor: pointer;
-        }
-        .btn:hover {
-            background: #ffaa00;
-            color: #002c5f;
-        }
-        .footer {
-            text-align: center;
-            padding: 20px;
-            font-size: 0.8rem;
-            color: #5b6e8c;
-            background: white;
-        }
-        .product-img-placeholder {
-            background: #eef3fc;
-            border-radius: 20px;
-            padding: 10px;
-            text-align: center;
-            margin: 15px 0;
-        }
-        .product-img-placeholder img {
-            max-width: 100%;
-            border-radius: 16px;
-        }
-
-        /* ========== 手机端专项优化 (屏幕宽度 ≤ 768px) ========== */
-        @media (max-width: 768px) {
-            body {
-                padding: 12px;
-            }
-            .container {
-                border-radius: 20px;
-            }
-            .header {
-                padding: 20px 16px 16px;
-            }
-            .header h1 {
-                font-size: 1.3rem;
-                margin-bottom: 6px;
-            }
-            .header .tagline {
-                font-size: 0.85rem;
-                margin-bottom: 8px;
-            }
-            .contact-bar {
-                font-size: 0.75rem;
-                padding: 4px 14px;
-            }
-            .profile {
-                padding: 24px 20px;
-                gap: 20px;
-            }
-            .profile-img {
-                flex: 0 0 120px;
-            }
-            .profile-img img {
-                max-width: 110px;
-                border-width: 3px;
-            }
-            .profile-info h2 {
-                font-size: 1.4rem;
-                margin-bottom: 8px;
-            }
-            .info-detail {
-                padding: 10px 14px;
-                margin: 10px 0;
-            }
-            .info-detail p {
-                margin: 6px 0;
-                gap: 8px;
-                font-size: 0.85rem;
-            }
-            .badge {
-                font-size: 0.75rem;
-                padding: 3px 10px;
-            }
-            .section {
-                padding: 20px 20px 16px;
-            }
-            .section h3 {
-                font-size: 1.3rem;
-                margin-bottom: 16px;
-                padding-left: 12px;
-                border-left-width: 4px;
-            }
-            .product-grid {
-                gap: 16px;
-                margin-top: 10px;
-            }
-            .card {
-                padding: 16px;
-            }
-            .card h4 {
-                font-size: 1.15rem;
-                margin-bottom: 8px;
-            }
-            .card .price {
-                font-size: 1.25rem;
-                margin: 8px 0;
-            }
-            .card ul {
-                margin-left: 12px;
-                margin-top: 8px;
-            }
-            .card li {
-                margin: 5px 0;
-                font-size: 0.85rem;
-            }
-            .click-hint {
-                font-size: 0.7rem;
-                margin-top: 10px;
-                padding: 3px 10px;
-            }
-            .contact-section {
-                padding: 24px 16px;
-            }
-            .contact-section h3 {
-                font-size: 1.2rem;
-                margin-bottom: 10px;
-            }
-            .contact-section p {
-                font-size: 0.85rem;
-            }
-            .btn {
-                font-size: 1rem;
-                padding: 10px 24px;
-                margin: 8px 8px;
-            }
-            .footer {
-                padding: 16px;
-                font-size: 0.7rem;
-            }
-            .modal-content {
-                margin: 20% auto;
-                padding: 20px;
-                width: 92%;
-            }
-            .modal h3 {
-                font-size: 1.25rem;
-            }
-            .modal p, .modal ul {
-                font-size: 0.9rem;
-                line-height: 1.4;
-            }
-            .modal-btn {
-                font-size: 0.9rem;
-                padding: 8px 16px;
-            }
-            .product-img-placeholder {
-                padding: 6px;
-            }
-        }
-
-        /* 更小屏幕（≤480px）进一步微调 */
-        @media (max-width: 480px) {
-            .profile {
-                flex-direction: column;
-                text-align: center;
-            }
-            .info-detail p {
-                justify-content: center;
-            }
-            .profile-img {
-                margin-bottom: 8px;
-            }
-            .product-grid {
-                grid-template-columns: 1fr;
-            }
+        @media (max-width: 480px){
+            .profile{flex-direction:column;text-align:center;}
+            .info-detail p{justify-content:center;}
+            .profile-img{margin-bottom:8px;}
+            .product-grid{grid-template-columns:1fr;}
         }
     </style>
 </head>
@@ -425,11 +99,8 @@
         <div class="tagline">区域总监 · 政企/家庭客户一站式服务</div>
         <div class="contact-bar">📞 7×12小时 快速响应 | 官方授权</div>
     </div>
-
     <div class="profile">
-        <div class="profile-img">
-            <img src="myphoto.jpg" alt="广州电信区域总监 张武杰" onerror="this.src='https://via.placeholder.com/160?text=Zhang+Wujie'">
-        </div>
+        <div class="profile-img"><img src="myphoto.jpg" alt="广州电信区域总监 张武杰" onerror="this.src='https://via.placeholder.com/160?text=Zhang+Wujie'"></div>
         <div class="profile-info">
             <h2>张武杰 · 区域总监</h2>
             <div class="info-detail">
@@ -437,215 +108,97 @@
                 <p>📍 服务范围：<span class="badge">广州市全区域</span> <span class="badge">企业专线/组网</span> <span class="badge">家庭宽带</span> <span class="badge">固话/IPTV</span> <span class="badge">政企ICT</span></p>
                 <p>📱 手机/微信/WhatsApp：<strong>189 2216 8560</strong> （24小时可加微信）</p>
                 <p>✉️ 邮箱：zhangwj@chinatelecom.cn</p>
-                <p>⭐ 总监直派通道：快速审批，特殊优惠，售后直达管理层</p>
+                <p>⭐ 总监特权：快速审批，特殊优惠，售后直达管理层</p>
             </div>
         </div>
     </div>
-
-    <!-- 家庭宽带套餐 -->
-    <div class="section">
-        <h3>🚀 家庭宽带套餐（点击卡片查看详情）</h3>
-        <div class="product-grid">
-            <div class="card" data-product="home_300m">
-                <h4>极速光纤 · 300M</h4>
-                <div class="price">¥129/月</div>
-                <ul><li>下行300M，上行30M</li><li>最高50G流量</li><li>含IPTV基础包</li></ul>
-                <div class="click-hint">👉 点击查看详细介绍</div>
-            </div>
-            <div class="card" data-product="home_1000m">
-                <h4>畅享千兆 · 1000M</h4>
-                <div class="price">¥229/月</div>
-                <ul><li>1000M宽带 + 5张手机卡（最高100GB流量+1500分钟）</li><li>送WiFI7版FTTR（字母路由器）</li><li>送天翼智屏</li></ul>
-                <div class="click-hint">👉 点击查看详细介绍</div>
-            </div>
-            <div class="card" data-product="home_family">
-                <h4>全家福融合套餐</h4>
-                <div class="price">¥299/月</div>
-                <ul><li>2000M宽带 + 10张手机卡（150GB流量+1500分钟）</li><li>IPTV超级会员</li><li>送WiFI7版FTTR（字母路由器）</li></ul>
-                <div class="click-hint">👉 点击查看详细介绍</div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 政企 & 商业客户方案 -->
-    <div class="section">
-        <h3>🏢 政企 & 商业客户方案（点击卡片查看详情）</h3>
-        <div class="product-grid">
-            <div class="card" data-product="business_private">
-                <h4>企业专线 · 对等光纤</h4>
-                <div class="price">定制报价 · 快速审批</div>
-                <ul><li>50M~10G 对等带宽</li><li>固定IP / 云专线 / SD-WAN</li><li>SLA 99.99% 保障</li></ul>
-                <div class="click-hint">👉 点击查看详细介绍</div>
-            </div>
-            <div class="card" data-product="business_hotel">
-                <h4>酒店/公寓/园区批量方案</h4>
-                <ul><li>批量开户享受7-9折</li><li>IPTV定制界面 + 管理后台</li><li>融合语音+网络+监控</li></ul>
-                <div class="click-hint">👉 点击查看详细介绍</div>
-            </div>
-            <div class="card" data-product="business_ict">
-                <h4>政企组网+安全+云</h4>
-                <ul><li>天翼云眼/视频会议</li><li>网络安全防护/等保</li><li>企业云盘/协同办公</li></ul>
-                <div class="click-hint">👉 点击查看详细介绍</div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 更多产品/方案介绍 -->
-    <div class="section">
-        <h3>📦 更多产品/方案介绍（点击卡片查看详情）</h3>
-        <div class="product-grid">
-            <div class="card" data-product="tianyi_zhiping">
-                <h4>天翼智屏</h4>
-                <div class="price">五大核心功能</div>
-                <ul><li>看电视 · 打电话 · 能看家 · 开大门 · 控家电</li></ul>
-                <div class="click-hint">👉 点击查看图片及材料介绍</div>
-            </div>
-            <div class="card" data-product="placeholder_community">
-                <h4>智慧社区方案</h4>
-                <div class="price">即将推出</div>
-                <ul><li>人脸门禁 · 车辆识别 · 智慧停车</li></ul>
-                <div class="click-hint">👉 点击了解详情</div>
-            </div>
-            <div class="card" data-product="placeholder_cloud">
-                <h4>企业云盘服务</h4>
-                <div class="price">敬请期待</div>
-                <ul><li>安全存储 · 团队协作 · 多端同步</li></ul>
-                <div class="click-hint">👉 点击了解详情</div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 优势说明 -->
-    <div class="section">
-        <h3>📌 为什么选择区域总监直连？</h3>
-        <ul style="margin-left: 30px; font-size: 1.05rem; margin-bottom: 10px;">
-            <li>✔ 广州电信在职区域总监，工号可查，合同发票齐全</li>
-            <li>✔ 快速预约上门勘察，重点企业当天响应</li>
-            <li>✔ 享受额外总监特批优惠（可提供优于万号和营业厅方案）</li>
-            <li>✔ 企业客户一对一方案设计，售后问题直达管理层</li>
-        </ul>
-    </div>
-
+    <div class="section"><h3>🚀 家庭宽带套餐（点击卡片查看详情）</h3><div class="product-grid"><div class="card" data-product="home_0"><h4>极速光纤 · 300M</h4><div class="price">¥129/月</div><ul><li>下行300M，上行30M；最高50G流量；含IPTV基础包</li></ul><div class="click-hint">👉 点击查看详细介绍</div></div><div class="card" data-product="home_1"><h4>畅享千兆 · 1000M</h4><div class="price">¥229/月</div><ul><li>1000M宽带 + 5张手机卡（最高100GB流量+1500分钟）；送WiFI7版FTTR；送天翼智屏</li></ul><div class="click-hint">👉 点击查看详细介绍</div></div><div class="card" data-product="home_2"><h4>全家福融合套餐</h4><div class="price">¥299/月</div><ul><li>2000M宽带 + 10张手机卡（150GB流量+1500分钟）；送WiFI7版FTTR；IPTV超级会员</li></ul><div class="click-hint">👉 点击查看详细介绍</div></div></div></div>
+    <div class="section"><h3>🏢 政企 & 商业客户方案（点击卡片查看详情）</h3><div class="product-grid"><div class="card" data-product="bus_0"><h4>企业专线 · 对等光纤</h4><div class="price">定制报价 · 快速审批</div><ul><li>50M~10G 对等带宽；固定IP / 云专线 / SD-WAN；SLA 99.99% 保障</li></ul><div class="click-hint">👉 点击查看详细介绍</div></div><div class="card" data-product="bus_1"><h4>酒店/公寓/园区批量方案</h4><ul><li>批量开户享受7-9折；IPTV定制界面 + 管理后台；融合语音+网络+监控</li></ul><div class="click-hint">👉 点击查看详细介绍</div></div><div class="card" data-product="bus_2"><h4>政企组网+安全+云</h4><ul><li>天翼云眼/视频会议；网络安全防护/等保；企业云盘/协同办公</li></ul><div class="click-hint">👉 点击查看详细介绍</div></div></div></div>
+    <div class="section"><h3>📦 更多产品/方案介绍（点击卡片查看详情）</h3><div class="product-grid"><div class="card" data-product="extra_0"><h4>天翼智屏</h4><div class="price">五大核心功能</div><ul><li>看电视 · 打电话 · 能看家 · 开大门 · 控家电</li></ul><div class="click-hint">👉 点击查看详细介绍</div></div><div class="card" data-product="extra_1"><h4>智慧社区方案</h4><div class="price">即将推出</div><ul><li>人脸门禁 · 车辆识别 · 智慧停车</li></ul><div class="click-hint">👉 点击查看详细介绍</div></div><div class="card" data-product="extra_2"><h4>企业云盘服务</h4><div class="price">敬请期待</div><ul><li>安全存储 · 团队协作 · 多端同步</li></ul><div class="click-hint">👉 点击查看详细介绍</div></div></div></div>
+    <div class="section"><h3>📌 为什么选择区域总监直连？</h3><ul style="margin-left:30px; font-size:1.05rem; margin-bottom:10px;"><li>✔ 广州电信在职区域总监，工号可查，合同发票齐全</li><li>✔ 快速预约上门勘察，重点企业当天响应</li><li>✔ 享受额外总监特批优惠（可提供优于万号和营业厅方案）</li><li>✔ 企业客户一对一方案设计，售后问题直达管理层</li></ul></div>
     <div class="contact-section">
-        <h3 style="margin-bottom: 15px;">📢 立即联系 张武杰 总监 获取最新优惠</h3>
-        <p style="margin-bottom: 10px;">加微信请备注“宽带咨询”或“企业名称”</p>
-        <a href="tel:18922168560" class="btn">📞 一键拨号 (189-2216-8560)</a>
-        <a href="https://wa.me/8618922168560?text=您好张总监，我想咨询宽带/政企业务" class="btn" style="background:#25D366;">💬 微信沟通</a>
-        <p style="margin-top: 20px;">🔹 也可扫描下方名片二维码添加微信 🔹</p>
-        <img src="wechat_qr.jpg" alt="张武杰 微信二维码" style="width: 150px; margin-top: 10px;">
+        <h3 style="margin-bottom:15px;">📢 立即联系 张武杰 总监 获取最新优惠</h3>
+        <p style="margin-bottom:10px;">加微信请备注“宽带咨询”或“企业名称”</p>
+        <a href="tel:18922168560" class="btn">📞 一键拨号 (189 2216 8560)</a>
+        <a href="https://wa.me/8618922168560?text=您好张武杰区域总监，我想咨询宽带/政企业务" class="btn" style="background:#25D366;">💬 微信沟通</a>
+        <p style="margin-top:20px;">🔹 也可扫描下方名片二维码添加微信 🔹</p>
+        <img src="wechat_qr.jpg" alt="张武杰 微信二维码" style="width:150px; margin-top:10px;">
     </div>
-
-    <div class="footer">
-        © 2026 中国电信广州分公司 区域总监 张武杰 ｜ 官网可查 ｜ 页面更新：2026年4月
-    </div>
+    <div class="footer">© 2026 中国电信广州分公司 区域总监 张武杰 ｜ 官网可查 ｜ 页面更新：2026年4月</div>
 </div>
-
-<!-- 模态框 -->
-<div id="productModal" class="modal">
-    <div class="modal-content">
-        <span class="close-modal">&times;</span>
-        <div id="modalBody"></div>
-    </div>
-</div>
-
+<div id="productModal" class="modal"><div class="modal-content"><span class="close-modal">&times;</span><div id="modalBody"></div></div></div>
 <script>
-    // 产品详细内容库
     const productDetails = {
-        home_300m: {
-            title: "极速光纤 · 300M 家庭宽带",
-            content: `<p><strong>套餐详情：</strong></p><ul><li>下行300M，上行30M，满足4K视频、在线教育、远程办公</li><li>赠送IPTV基础版（含央视及卫视直播）</li><li>全市免费上门办理</li><li>家庭成员互打免费、共享语音流量</li></ul><p><strong>适合人群：</strong> 中小户型家庭，日常上网、视频、游戏流畅体验。</p><p><strong>优惠活动：</strong> 联系总监享50元话费补贴。</p><a href="tel:18922168560" class="modal-btn">📞 立即联系办理</a>`
+        "home_300m": {
+                "title": "极速光纤 · 300M",
+                "content": "<p><strong>套餐详情：</strong></p><ul><li>下行300M，上行30M，满足4K视频、在线教育、远程办公</li><li>赠送IPTV基础版（含央视及卫视直播）</li><li>全市免费上门办理</li><li>家庭成员互打免费、共享语音流量</li></ul><p><strong>适合人群：</strong> 中小户型家庭，日常上网、视频、游戏流畅体验。</p><p><strong>优惠活动：</strong> 联系总监享50元话费补贴。</p><a href=\"tel:18922168560\" class=\"modal-btn\">📞 立即联系办理</a>"
         },
-        home_1000m: {
-            title: "畅享千兆 · 1000M 全屋WiFi",
-            content: `<p><strong>套餐详情：</strong></p><ul><li>下行1000M，上行50M，极致速率，支持8K视频、大型游戏、NAS</li><li>赠送价值1600元WiFI6版FTTR（含1个主路由+1个子路由）</li><li>赠送天翼云盘1T空间（家庭共享）</li><li>提供专属智慧家庭工程师调优</li></ul><p><strong>适合人群：</strong> 大平层/别墅，多设备同时在线，电竞爱好者。</p><p><strong>总监特批：</strong> 并赠送千兆网线礼包、100元话费补贴。</p><a href="tel:18922168560" class="modal-btn">📞 预约千兆体验</a>`
+        "home_1000m": {
+                "title": "畅享千兆 · 1000M",
+                "content": "<p><strong>套餐详情：</strong></p><ul><li>下行1000M，上行50M，极致速率，支持8K视频、大型游戏、NAS</li><li>赠送价值1600元WiFI6版FTTR（含1个主路由+1个子路由）</li><li>赠送天翼云盘1T空间（家庭共享）</li><li>提供专属智慧家庭工程师调优</li></ul><p><strong>适合人群：</strong> 大平层/别墅，多设备同时在线，电竞爱好者。</p><p><strong>总监特批：</strong> 并赠送千兆网线礼包、100元话费补贴。</p><a href=\"tel:18922168560\" class=\"modal-btn\">📞 预约千兆体验</a>"
         },
-        home_family: {
-            title: "全家福融合套餐（宽带+手机）",
-            content: `<p><strong>套餐详情：</strong></p><ul><li>2000M宽带 + 10张手机卡共享150GB全国流量+1500分钟通话</li><li>赠送价值2000元WiFI7版FTTR（字母路由器）</li><li>送天翼智屏，可看电视、控家电、打电话、开大门、能看家</li><li>家庭成员互打免费</li></ul><p><strong>适合人群：</strong> 全家共享，一人付费，全家使用。</p><p><strong>限时优惠：</strong> 联系总监享100元话费补贴。</p><a href="tel:18922168560" class="modal-btn">📞 了解融合套餐</a>`
+        "home_family": {
+                "title": "全家福融合套餐",
+                "content": "<p><strong>套餐详情：</strong></p><ul><li>2000M宽带 + 10张手机卡共享150GB全国流量+1500分钟通话</li><li>赠送价值2000元WiFI7版FTTR（字母路由器）</li><li>送天翼智屏，可看电视、控家电、打电话、开大门、能看家</li><li>家庭成员互打免费</li></ul><p><strong>适合人群：</strong> 全家共享，一人付费，全家使用。</p><p><strong>限时优惠：</strong> 联系总监享100元话费补贴。</p><a href=\"tel:18922168560\" class=\"modal-btn\">📞 了解融合套餐</a>"
         },
-        business_private: {
-            title: "企业专线 · 对等光纤",
-            content: `<p><strong>产品亮点：</strong></p><ul><li>上下行对等带宽（50M~10G可选）</li><li>提供固定公网IP（IPv4/IPv6）</li><li>支持云专线、SD-WAN组网、MPLS VPN</li><li>SLA 99.99%，7×24小时故障响应</li></ul><p><strong>适合场景：</strong> 企业总部、数据中心、金融、电商、游戏公司。</p><p><strong>总监特权：</strong> 可申请3个月免费试用（带宽≤200M），免安装调试费。</p><a href="tel:18922168560" class="modal-btn">📞 获取企业报价方案</a>`
+        "business_private": {
+                "title": "企业专线 · 对等光纤",
+                "content": "<p><strong>产品亮点：</strong></p><ul><li>上下行对等带宽（50M~10G可选）</li><li>提供固定公网IP（IPv4/IPv6）</li><li>支持云专线、SD-WAN组网、MPLS VPN</li><li>SLA 99.99%，7×24小时故障响应</li></ul><p><strong>适合场景：</strong> 企业总部、数据中心、金融、电商、游戏公司。</p><p><strong>总监特权：</strong> 可申请3个月免费试用（带宽≤200M），免安装调试费。</p><a href=\"tel:18922168560\" class=\"modal-btn\">📞 获取企业报价方案</a>"
         },
-        business_hotel: {
-            title: "酒店/公寓/园区批量宽带方案",
-            content: `<p><strong>方案特色：</strong></p><ul><li>批量开户享受7-9折梯度优惠（50线以上享7折）</li><li>IPTV定制开机画面、频道列表、酒店欢迎界面</li><li>提供统一网络管理后台，支持房间带宽调控</li><li>融合语音+网络+安防监控一站式部署</li></ul><p><strong>成功案例：</strong> 广州富力酒店、万科泊寓等。</p><p><strong>总监直批：</strong> 可赠送3个月网络运维服务。</p><a href="tel:18922168560" class="modal-btn">📞 预约现场勘察</a>`
+        "business_hotel": {
+                "title": "酒店/公寓/园区批量方案",
+                "content": "<p><strong>方案特色：</strong></p><ul><li>批量开户享受7-9折梯度优惠（50线以上享7折）</li><li>IPTV定制开机画面、频道列表、酒店欢迎界面</li><li>提供统一网络管理后台，支持房间带宽调控</li><li>融合语音+网络+安防监控一站式部署</li></ul><p><strong>成功案例：</strong> 广州富力酒店、万科泊寓等。</p><p><strong>总监直批：</strong> 可赠送3个月网络运维服务。</p><a href=\"tel:18922168560\" class=\"modal-btn\">📞 预约现场勘察</a>"
         },
-        business_ict: {
-            title: "政企组网+安全+云服务",
-            content: `<p><strong>整合方案：</strong></p><ul><li>天翼云眼（视频监控+AI分析）</li><li>网络安全防护（下一代防火墙、入侵检测）</li><li>天翼云桌面、云会议、企业云盘</li><li>等保合规咨询与建设</li></ul><p><strong>适用对象：</strong> 政府单位、学校、医院、连锁门店。</p><p><strong>总监支持：</strong> 免费出具等保差距分析报告，提供3个月云资源试用。</p><a href="tel:18922168560" class="modal-btn">📞 申请数字化诊断</a>`
+        "business_ict": {
+                "title": "政企组网+安全+云",
+                "content": "<p><strong>整合方案：</strong></p><ul><li>天翼云眼（视频监控+AI分析）</li><li>网络安全防护（下一代防火墙、入侵检测）</li><li>天翼云桌面、云会议、企业云盘</li><li>等保合规咨询与建设</li></ul><p><strong>适用对象：</strong> 政府单位、学校、医院、连锁门店。</p><p><strong>总监支持：</strong> 免费出具等保差距分析报告，提供3个月云资源试用。</p><a href=\"tel:18922168560\" class=\"modal-btn\">📞 申请数字化诊断</a>"
         },
-        tianyi_zhiping: {
-            title: "天翼智屏 - 智慧家庭全能终端",
-            content: `
-                <p><strong>产品图片：</strong></p>
-                <div class="product-img-placeholder">
-                    <img src="tianyi_zhiping.jpg" alt="天翼智屏产品图" onerror="this.src='https://via.placeholder.com/400x200?text=天翼智屏+产品图'">
-                    <p style="font-size:0.8rem; color:#666;">△ 产品示意图（可替换为真实图片）</p>
-                </div>
-                <p><strong>五大核心功能：</strong></p>
-                <ul>
-                    <li>📺 <strong>看电视</strong>：IPTV海量内容，4K超清，语音搜片</li>
-                    <li>📞 <strong>打电话</strong>：支持高清视频通话，一键呼叫家人</li>
-                    <li>🏠 <strong>能看家</strong>：内置摄像头，手机远程查看，异常告警</li>
-                    <li>🚪 <strong>开大门</strong>：智能门锁联动，远程临时密码，开门记录</li>
-                    <li>🔌 <strong>控家电</strong>：红外/蓝牙网关，控制空调、电视、灯光等</li>
-                </ul>
-                <p><strong>优惠活动：</strong> 新装宽带用户可享设备0元租用，详询张总监。</p>
-                <a href="tel:18922168560" class="modal-btn">📞 立即咨询天翼智屏</a>
-            `
+        "tianyi_zhiping": {
+                "title": "天翼智屏",
+                "content": "<p><strong>产品图片：</strong></p><div class=\"product-img-placeholder\"><img src=\"tianyi_zhiping.jpg\" alt=\"天翼智屏产品图\" onerror=\"this.src='https://via.placeholder.com/400x200?text=天翼智屏+产品图'\"><p style=\"font-size:0.8rem; color:#666;\">△ 产品示意图</p></div><p><strong>五大核心功能：</strong></p><ul><li>📺 看电视：IPTV海量内容，4K超清，语音搜片</li><li>📞 打电话：支持高清视频通话，一键呼叫家人</li><li>🏠 能看家：内置摄像头，手机远程查看，异常告警</li><li>🚪 开大门：智能门锁联动，远程临时密码</li><li>🔌 控家电：红外/蓝牙网关，控制空调、电视等</li></ul><p><strong>优惠活动：</strong> 新装宽带用户可享设备0元租用，详询张总监。</p><a href=\"tel:18922168560\" class=\"modal-btn\">📞 立即咨询天翼智屏</a>"
         },
-        placeholder_community: {
-            title: "智慧社区方案（即将推出）",
-            content: `<p>智慧社区方案包含：人脸识别门禁、车辆自动识别、智慧停车管理、社区安防监控等。</p><p>如需提前了解或定制方案，请联系张总监：<strong>189 2216 8560</strong></p><a href="tel:18922168560" class="modal-btn">📞 联系总监</a>`
+        "placeholder_community": {
+                "title": "智慧社区方案",
+                "content": "<p>智慧社区方案包含：人脸识别门禁、车辆自动识别、智慧停车管理、社区安防监控等。</p><p>如需提前了解或定制方案，请联系张总监。</p><a href=\"tel:18922168560\" class=\"modal-btn\">📞 联系总监</a>"
         },
-        placeholder_cloud: {
-            title: "企业云盘服务（敬请期待）",
-            content: `<p>天翼企业云盘：安全存储、文件共享、多端同步、团队协作。支持权限管理和历史版本恢复。</p><p>您可以先添加张总监微信，上线后第一时间获得免费试用名额。</p><a href="tel:18922168560" class="modal-btn">📞 预约优先体验</a>`
+        "placeholder_cloud": {
+                "title": "企业云盘服务",
+                "content": "<p>天翼企业云盘：安全存储、文件共享、多端同步、团队协作。支持权限管理和历史版本恢复。</p><p>可先添加微信，上线后获得免费试用名额。</p><a href=\"tel:18922168560\" class=\"modal-btn\">📞 预约优先体验</a>"
         }
-    };
-
+};
     const modal = document.getElementById('productModal');
     const modalBody = document.getElementById('modalBody');
     const closeSpan = document.querySelector('.close-modal');
-
     const cards = document.querySelectorAll('.card');
     cards.forEach(card => {
-        card.addEventListener('click', (e) => {
+        card.addEventListener('click', () => {
             const productKey = card.getAttribute('data-product');
-            if (productKey && productDetails[productKey]) {
-                const detail = productDetails[productKey];
-                modalBody.innerHTML = `<h3>${detail.title}</h3>${detail.content}`;
+            let found = null;
+            for (let k in productDetails) {
+                if (productKey.includes(k) || k === productKey) { found = productDetails[k]; break; }
+            }
+            if (!found) found = productDetails[Object.keys(productDetails)[0]];
+            if (found) {
+                modalBody.innerHTML = '<h3>' + found.title + '</h3>' + found.content;
                 modal.style.display = 'block';
                 document.body.style.overflow = 'hidden';
-            } else {
-                console.warn('未找到产品详情:', productKey);
             }
         });
     });
-
-    function closeModal() {
-        modal.style.display = 'none';
-        document.body.style.overflow = 'auto';
-    }
+    function closeModal() { modal.style.display = 'none'; document.body.style.overflow = 'auto'; }
     closeSpan.onclick = closeModal;
-    window.onclick = function(event) {
-        if (event.target === modal) closeModal();
-    };
-</script>
-
-<script type="application/ld+json">
-{
+    window.onclick = function(event) { if (event.target === modal) closeModal(); };
+<\/script>
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "广州电信宽带报装 - 区域总监张武杰",
   "image": "https://您的域名/myphoto.jpg",
   "telephone": "+8618922168560",
-  "email": "zhangwujie@gd.189.cn",
+  "email": "zhangwj@chinatelecom.cn",
   "address": {"@type": "PostalAddress","addressLocality": "广州","addressRegion": "广东","addressCountry": "CN"},
   "priceRange": "¥99 - ¥100000",
   "areaServed": "广州市"
-}
-</script>
+}<\/script>
 </body>
 </html>
