@@ -1,1 +1,7 @@
-Sitemap: https://wujiezhang2017.github.io/telecom/sitemap.xml
+User-agent: Baiduspider
+Allow: /
+
+User-agent: *
+Disallow: /
+
+Sitemap: https://zhangwujie.cn/sitemap.xml
